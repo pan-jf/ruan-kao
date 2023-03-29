@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>介绍 · GitBook</title>
+        <title>2.04  数据的表示(浮点数运算) · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -58,6 +58,8 @@
 
     
     
+    <link rel="prev" href="2_03.html" />
+    
 
     </head>
     <body>
@@ -85,7 +87,7 @@
         
         
     
-        <li class="chapter active" data-level="1.1" data-path="./">
+        <li class="chapter " data-level="1.1" data-path="./">
             
                 <a href="./">
             
@@ -184,7 +186,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.1.2.4" data-path="2_04.html">
+        <li class="chapter active" data-level="1.1.2.4" data-path="2_04.html">
             
                 <a href="2_04.html">
             
@@ -237,7 +239,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >介绍</a>
+        <a href="." >2.04  数据的表示(浮点数运算)</a>
     </h1>
 </div>
 
@@ -252,8 +254,21 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x8F6F;&#x8003;&#x5B66;&#x4E60;&#x8BB0;&#x5F55;">&#x8F6F;&#x8003;&#x5B66;&#x4E60;&#x8BB0;&#x5F55;</h1>
-<p>&#x4E2D;&#x7EA7;&#x8F6F;&#x4EF6;&#x8BBE;&#x8BA1;&#x5E08;&#x5B66;&#x4E60;&#x4E4B;&#x8DEF;</p>
+                                <h1 id="204--&#x6570;&#x636E;&#x7684;&#x8868;&#x793A;&#x6D6E;&#x70B9;&#x6570;&#x8FD0;&#x7B97;">2.04  &#x6570;&#x636E;&#x7684;&#x8868;&#x793A;(&#x6D6E;&#x70B9;&#x6570;&#x8FD0;&#x7B97;)</h1>
+<p><img src="imgs/0204_1.png" alt=""></p>
+<h3 id="&#x6D6E;&#x70B9;&#x6570;">&#x6D6E;&#x70B9;&#x6570;</h3>
+<p>&#x6D6E;&#x70B9;&#x6570;&#x662F;&#x6307;&#x7684;&#x662F;&#x79D1;&#x5B66;&#x8BA1;&#x7B97;&#x6CD5;&#x8868;&#x793A;&#x6570;&#x7684;&#x65B9;&#x5F0F;&#x3002;</p>
+<p><img src="imgs/0204_2.png" alt=""></p>
+<p>&#x6BD4;&#x65B9;&#x8BF4;1000&#x3002;&#x7528;&#x79D1;&#x5B66;&#x8BA1;&#x6570;&#x6CD5;&#x53EF;&#x4EE5;&#x8BA1;&#x6570;&#x4E3A;<code>1.0x10^3</code></p>
+<p><img src="imgs/0204_3.png" alt=""></p>
+<p>&#x518D;&#x6BD4;&#x65B9;&#x8BF4;119&#x3002;&#x7528;&#x79D1;&#x5B66;&#x8BA1;&#x6570;&#x6CD5;&#x53EF;&#x4EE5;&#x8BA1;&#x6570;&#x4E3A;<code>1.19x10^2</code></p>
+<h4 id="&#x6D6E;&#x70B9;&#x6570;&#x76F8;&#x52A0;">&#x6D6E;&#x70B9;&#x6570;&#x76F8;&#x52A0;</h4>
+<p>&#x4E0A;&#x9762;2&#x4E2A;&#x6570;&#x5982;&#x679C;&#x8981;&#x76F8;&#x52A0;&#xFF0C;&#x9996;&#x5148;&#x9700;&#x8981;&#x5BF9;&#x9636;&#xFF0C;&#x4E00;&#x822C;&#x5462;&#x662F;<strong>&#x4ECE;&#x4F4E;&#x7684;&#x5F80;&#x9AD8;&#x7684;&#x5BF9;</strong>&#x3002;</p>
+<p><img src="imgs/0204_4.png" alt=""></p>
+<p>&#x5148;&#x5C06;<code>1.19x10^2</code>&#x5BF9;&#x9636;&#x4E3A;<code>0.119x10^3</code></p>
+<p>&#x7136;&#x540E;&#x5C3E;&#x6570;&#x76F8;&#x52A0;&#xFF0C;<code>1.0</code> + <code>0.119</code> <code>=1.119</code>&#xFF0C;&#x7ED3;&#x679C;&#x4E5F;&#x5C31;&#x662F;<code>1.119X10^3</code></p>
+<p>&#x6700;&#x540E;&#x683C;&#x5F0F;&#x5316;&#x8FD9;&#x4E2A;&#x6570;&#xFF0C;&#x7531;&#x4E8E;<code>1.119 &gt; 1 &#x5E76;&#x4E14; 1.119 &lt; 10</code>&#xFF0C;&#x6240;&#x4EE5;&#x4FDD;&#x6301;&#x4E0D;&#x53D8;&#x3002;&#x5982;&#x679C;&#x53CD;&#x4E4B;&#xFF0C;&#x8FD8;&#x9700;&#x8981;&#x632A;&#x4E00;&#x4E0B;&#x9636;&#x7801;&#x3002;</p>
+<p>&#x5C31;&#x6BD4;&#x5982; <code>1.119X10^2 + 9X10^2</code>&#xFF0C;&#x7ED3;&#x679C;&#x662F; <code>10.119X10^2</code>&#xFF0C;&#x5C31;&#x9700;&#x8981;&#x683C;&#x5F0F;&#x5316;&#x4E3A;<code>1.0119X10^3</code></p>
 
                                 
                                 </section>
@@ -281,6 +296,10 @@
 
             
                 
+                <a href="2_03.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 2.03  数据的表示(原码反码补码移码)">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
                 
             
         
@@ -289,7 +308,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"介绍","level":"1.1","depth":1,"next":{"title":"第一章 简介","level":"1.1.1","depth":2,"ref":"","articles":[{"title":"1.01  软件设计师考试介绍","level":"1.1.1.1","depth":3,"path":"1_01.md","ref":"1_01.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2023-03-29T06:52:17.399Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-03-29T09:52:03.604Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"2.04  数据的表示(浮点数运算)","level":"1.1.2.4","depth":3,"previous":{"title":"2.03  数据的表示(原码反码补码移码)","level":"1.1.2.3","depth":3,"path":"2_03.md","ref":"2_03.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"2_04.md","mtime":"2023-03-29T09:50:35.683Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-03-29T09:52:03.604Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
