@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>2.05  CPU结构（运算器与控制器的组成） · GitBook</title>
+        <title>2.16  磁盘工作原理 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="2_06.html" />
     
-    
-    <link rel="prev" href="2_04.html" />
+    <link rel="prev" href="2_15.html" />
     
 
     </head>
@@ -201,7 +199,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.1.2.5" data-path="2_05.html">
+        <li class="chapter " data-level="1.1.2.5" data-path="2_05.html">
             
                 <a href="2_05.html">
             
@@ -344,7 +342,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.1.2.16" data-path="2_16.html">
+        <li class="chapter active" data-level="1.1.2.16" data-path="2_16.html">
             
                 <a href="2_16.html">
             
@@ -397,7 +395,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >2.05  CPU结构（运算器与控制器的组成）</a>
+        <a href="." >2.16  磁盘工作原理</a>
     </h1>
 </div>
 
@@ -412,50 +410,44 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="205--cpu&#x7ED3;&#x6784;&#xFF08;&#x8FD0;&#x7B97;&#x5668;&#x4E0E;&#x63A7;&#x5236;&#x5668;&#x7684;&#x7EC4;&#x6210;&#xFF09;">2.05  CPU&#x7ED3;&#x6784;&#xFF08;&#x8FD0;&#x7B97;&#x5668;&#x4E0E;&#x63A7;&#x5236;&#x5668;&#x7684;&#x7EC4;&#x6210;&#xFF09;</h1>
-<p>&#x6574;&#x4E2A;&#x8BA1;&#x7B97;&#x673A;&#x7684;&#x7EC4;&#x6210;&#xFF0C;&#x5C31;&#x662F;&#x4E3B;&#x673A;&#x52A0;&#x5916;&#x8BBE;&#x3002;</p>
-<p>&#x4E3B;&#x673A;&#x5305;&#x62EC;&#x4E24;&#x4E2A;&#x91CD;&#x8981;&#x90E8;&#x5206;&#xFF1A;<strong>CPU&#x548C;&#x4E3B;&#x5B58;&#x50A8;&#x5668;</strong>&#x3002;&#x5176;&#x4F59;&#x8FD8;&#x5305;&#x62EC;&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x7CFB;&#x7EDF;&#xFF0C;&#x603B;&#x7EBF;&#x7CFB;&#x7EDF;&#xFF0C;&#x65F6;&#x949F;&#x7CFB;&#x7EDF;&#xFF08;&#x4E0D;&#x8003;&#xFF09;&#x3002;</p>
-<p>&#x50CF;&#x786C;&#x76D8;&#x58F0;&#x5361;&#x663E;&#x5361;&#x8FD9;&#x4E9B;&#x4E1C;&#x897F;&#x90FD;&#x5F52;&#x4E3A;&#x5916;&#x8BBE;&#x4E86;&#x3002;</p>
-<p><strong>&#x5176;&#x4E2D;CPU&#x4E2D;&#xFF0C;&#x8FD0;&#x7B97;&#x5668;&#x548C;&#x63A7;&#x5236;&#x5668;&#x7684;&#x6784;&#x6210;&#x662F;&#x7ECF;&#x5E38;&#x8003;&#x5230;&#x7684;&#x4E00;&#x4E2A;&#x77E5;&#x8BC6;&#x70B9;&#x3002;</strong>&#x5F53;&#x7136;&#xFF0C;CPU&#x8FD8;&#x5305;&#x542B;&#x5BC4;&#x5B58;&#x5668;&#xFF0C;&#x7F13;&#x5B58;&#xFF0C;&#x603B;&#x7EBF;&#x3002;</p>
-<h3 id="&#x8FD0;&#x7B97;&#x5668;&#x7B97;&#x672F;&#x903B;&#x8F91;&#x5355;&#x5143;">&#x8FD0;&#x7B97;&#x5668;/&#x7B97;&#x672F;&#x903B;&#x8F91;&#x5355;&#x5143;</h3>
-<p><strong>Arithmetic Logic Unit, ALU</strong></p>
-<p>&#x8FD0;&#x7B97;&#x5668;&#x4E3B;&#x8981;&#x8D1F;&#x8D23;&#x6267;&#x884C;&#x4E0E;&#x8BA1;&#x7B97;&#x6709;&#x5173;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x5305;&#x62EC;&#xFF1A;</p>
+                                <h1 id="216--&#x78C1;&#x76D8;&#x5DE5;&#x4F5C;&#x539F;&#x7406;">2.16  &#x78C1;&#x76D8;&#x5DE5;&#x4F5C;&#x539F;&#x7406;</h1>
+<p><img src="imgs/0216_1.png" alt=""></p>
+<h4 id="&#x78C1;&#x9053;">&#x78C1;&#x9053;</h4>
+<p>&#x78C1;&#x76D8;&#x4E0A;&#x7684;&#x6570;&#x636E;&#x88AB;&#x5B58;&#x50A8;&#x5728;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x76D8;&#x7247;&#x4E0A;&#xFF0C;&#x6BCF;&#x4E2A;&#x76D8;&#x7247;&#x7531;&#x8BB8;&#x591A;&#x540C;&#x5FC3;&#x5706;&#x6784;&#x6210;&#xFF0C;&#x8FD9;&#x4E9B;&#x540C;&#x5FC3;&#x5706;&#x88AB;&#x79F0;&#x4E3A;&#x201C;&#x78C1;&#x9053;&#x201D;&#x3002;</p>
+<h4 id="&#x5BFB;&#x9053;">&#x5BFB;&#x9053;</h4>
+<p>&#x5F53;&#x8BA1;&#x7B97;&#x673A;&#x9700;&#x8981;&#x8BFB;&#x53D6;&#x78C1;&#x76D8;&#x4E0A;&#x7684;&#x6570;&#x636E;&#x65F6;&#xFF0C;&#x5B83;&#x5FC5;&#x987B;&#x5148;&#x627E;&#x5230;&#x5B58;&#x50A8;&#x8BE5;&#x6570;&#x636E;&#x7684;&#x78C1;&#x9053;&#xFF0C;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x5C31;&#x53EB;&#x505A;&#x201C;&#x5BFB;&#x9053;&#x201D;&#x3002;</p>
+<h4 id="&#x5BFB;&#x9053;&#x65F6;&#x95F4;">&#x5BFB;&#x9053;&#x65F6;&#x95F4;</h4>
+<p>&#x5BFB;&#x9053;&#x65F6;&#x95F4;&#x53D6;&#x51B3;&#x4E8E;&#x78C1;&#x5934;&#x79FB;&#x52A8;&#x5230;&#x6B63;&#x786E;&#x78C1;&#x9053;&#x6240;&#x9700;&#x7684;&#x65F6;&#x95F4;&#x3002;</p>
+<p>&#x53D6;&#x51B3;&#x4E8E;&#x78C1;&#x5934;&#x7684;&#x79FB;&#x52A8;&#x901F;&#x5EA6;&#x548C;&#x8DDD;&#x79BB;&#xFF0C;&#x4E00;&#x4E2A;&#x786C;&#x76D8;&#x7684;&#x5E73;&#x5747;&#x5BFB;&#x9053;&#x65F6;&#x95F4;&#x4E3A;8&#x6BEB;&#x79D2;&#x3002;</p>
+<h4 id="&#x78C1;&#x76D8;&#x65CB;&#x8F6C;&#x7B49;&#x5F85;&#x65F6;&#x95F4;">&#x78C1;&#x76D8;&#x65CB;&#x8F6C;&#x7B49;&#x5F85;&#x65F6;&#x95F4;</h4>
+<p>&#x662F;&#x6307;&#x78C1;&#x76D8;&#x65CB;&#x8F6C;&#x5230;&#x9700;&#x8981;&#x8BFB;&#x53D6;&#x6216;&#x5199;&#x5165;&#x7684;&#x6570;&#x636E;&#x6240;&#x5728;&#x4F4D;&#x7F6E;&#x6240;&#x9700;&#x7684;&#x65F6;&#x95F4;&#x3002;</p>
+<p>&#x53D6;&#x51B3;&#x4E8E;&#x78C1;&#x76D8;&#x7684;&#x65CB;&#x8F6C;&#x901F;&#x5EA6;&#xFF0C;&#x4E00;&#x4E2A;7200 RPM&#x7684;&#x786C;&#x76D8;&#xFF0C;&#x5176;&#x78C1;&#x76D8;&#x65CB;&#x8F6C;&#x7B49;&#x5F85;&#x65F6;&#x95F4;&#x4E3A;4.17&#x6BEB;&#x79D2;&#x3002;</p>
+<p><img src="imgs/0216_2.png" alt=""></p>
+<h4 id="&#x9898;&#x610F;&#x5206;&#x6790;">&#x9898;&#x610F;&#x5206;&#x6790;</h4>
+<p><img src="imgs/0216_3.png" alt=""></p>
 <ol>
-<li><p>&#x7B97;&#x672F;&#x8FD0;&#x7B97;&#xFF1A;&#x52A0;&#x3001;&#x51CF;&#x3001;&#x4E58;&#x3001;&#x9664;&#x3001;&#x53D6;&#x6A21;&#x7B49;&#x8FD0;&#x7B97;&#xFF1B;</p>
-</li>
-<li><p>&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#xFF1A;&#x4E0E;&#x3001;&#x6216;&#x3001;&#x975E;&#x3001;&#x5F02;&#x6216;&#x7B49;&#x8FD0;&#x7B97;&#xFF1B;</p>
-</li>
-<li><p>&#x79FB;&#x4F4D;&#x64CD;&#x4F5C;&#xFF1A;&#x5DE6;&#x79FB;&#x3001;&#x53F3;&#x79FB;&#x7B49;&#x64CD;&#x4F5C;&#xFF1B;</p>
-</li>
-<li><p>&#x6BD4;&#x8F83;&#x64CD;&#x4F5C;&#xFF1A;&#x5224;&#x65AD;&#x4E24;&#x4E2A;&#x6570;&#x4E4B;&#x95F4;&#x7684;&#x5927;&#x5C0F;&#x5173;&#x7CFB;&#x3002;</p>
-</li>
+<li>&#x7269;&#x7406;&#x5757;&#x4E5F;&#x5C31;&#x662F;&#x56FE;1&#x7684;&#x6247;&#x533A;&#x3002;&#x53EF;&#x4EE5;&#x7528;&#x4E0A;&#x56FE;&#x7684;&#x5706;&#x73AF;&#x6765;&#x7406;&#x89E3;11&#x4E2A;&#x6247;&#x533A;&#xFF08;R0&#x5230;R10&#xFF09;&#x3002;</li>
+<li>&#x65CB;&#x8F6C;&#x5468;&#x671F;&#x4E3A;33&#x6BEB;&#x79D2;&#xFF0C;&#x8F6C;&#x4E00;&#x5708;&#x4E00;&#x5171;11&#x4E2A;&#x8BB0;&#x5F55;&#xFF0C;&#x90A3;&#x4E48;&#x6BCF;&#x8BFB;&#x53D6;&#x4E00;&#x4E2A;&#x8BB0;&#x5F55;&#x6D88;&#x8017;3&#x6BEB;&#x79D2;&#x3002;</li>
+<li>&#x5355;&#x7F13;&#x51B2;&#x533A;&#x7684;&#x610F;&#x601D;&#x662F;&#x8BFB;&#x53D6;&#x548C;&#x5904;&#x7406;&#x662F;&#x540C;&#x6B65;&#x8FDB;&#x884C;&#x7684;&#xFF0C;&#x6BD4;&#x5982;R0&#x8BFB;&#x51FA;&#x6765;&#x4E86;&#xFF0C;&#x4ED6;&#x9700;&#x8981;&#x5904;&#x7406;&#x5B8C;&#x4E86;&#xFF0C;&#x624D;&#x80FD;&#x8BFB;R1&#x3002;</li>
 </ol>
-<h4 id="&#x7D2F;&#x52A0;&#x5BC4;&#x5B58;&#x5668;">&#x7D2F;&#x52A0;&#x5BC4;&#x5B58;&#x5668;</h4>
-<p><strong>accumulator register&#xFF0C;AC</strong></p>
-<p>&#x662F;&#x8BA1;&#x7B97;&#x673A;&#x4E2D;&#x7684;&#x4E00;&#x79CD;&#x7279;&#x6B8A;&#x5BC4;&#x5B58;&#x5668;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x6765;<strong>&#x5B58;&#x50A8;&#x8FD0;&#x7B97;&#x7ED3;&#x679C;&#x548C;&#x4E2D;&#x95F4;&#x7ED3;&#x679C;</strong>&#x3002;</p>
-<h3 id="&#x63A7;&#x5236;&#x5668;">&#x63A7;&#x5236;&#x5668;</h3>
-<p><strong>Control Unit,CU</strong></p>
+<h4 id="&#x8BA1;&#x7B97;&#x5904;&#x7406;11&#x4E2A;&#x8BB0;&#x5F55;&#x7684;&#x6700;&#x957F;&#x65F6;&#x95F4;">&#x8BA1;&#x7B97;&#x5904;&#x7406;11&#x4E2A;&#x8BB0;&#x5F55;&#x7684;&#x6700;&#x957F;&#x65F6;&#x95F4;</h4>
 <ol>
-<li>&#x8BFB;&#x53D6;&#x5E76;&#x89E3;&#x7801;&#x6307;&#x4EE4;&#xFF1A;&#x63A7;&#x5236;&#x5355;&#x5143;&#x4ECE;&#x4E3B;&#x5B58;&#x50A8;&#x5668;&#xFF08;RAM&#xFF09;&#x4E2D;&#x8BFB;&#x53D6;&#x6307;&#x4EE4;&#xFF0C;&#x5E76;&#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x89E3;&#x7801;&#xFF0C;&#x4EE5;&#x4E86;&#x89E3;&#x6307;&#x4EE4;&#x7684;&#x7C7B;&#x578B;&#x548C;&#x64CD;&#x4F5C;&#x3002;</li>
-<li>&#x63A7;&#x5236;&#x6570;&#x636E;&#x6D41;&#xFF1A;&#x63A7;&#x5236;&#x5355;&#x5143;&#x5C06;&#x6307;&#x4EE4;&#x53D1;&#x9001;&#x7ED9;&#x7B97;&#x672F;&#x903B;&#x8F91;&#x5355;&#x5143;&#xFF08;ALU&#xFF09;&#x548C;&#x5176;&#x4ED6;&#x90E8;&#x4EF6;&#xFF0C;&#x63A7;&#x5236;&#x6570;&#x636E;&#x7684;&#x6D41;&#x5411;&#x3002;</li>
-<li>&#x7BA1;&#x7406;&#x7A0B;&#x5E8F;&#x8BA1;&#x6570;&#x5668;&#xFF08;PC&#xFF09;&#xFF1A;&#x63A7;&#x5236;&#x5355;&#x5143;&#x6301;&#x7EED;&#x5730;&#x76D1;&#x89C6;&#x7A0B;&#x5E8F;&#x8BA1;&#x6570;&#x5668;&#x5185;&#x7684;&#x503C;&#xFF0C;&#x5E76;&#x4E3A;&#x6BCF;&#x6761;&#x6307;&#x4EE4;&#x589E;&#x52A0;&#x9002;&#x5F53;&#x7684;&#x503C;&#xFF0C;&#x4EE5;&#x4FDD;&#x6301;&#x6B63;&#x786E;&#x7684;&#x6307;&#x4EE4;&#x5E8F;&#x5217;&#x3002;</li>
-<li>&#x5904;&#x7406;&#x5F02;&#x5E38;&#x60C5;&#x51B5;&#xFF1A;&#x5728;&#x5904;&#x7406;&#x5668;&#x6267;&#x884C;&#x65F6;&#xFF0C;&#x63A7;&#x5236;&#x5355;&#x5143;&#x8FD8;&#x8D1F;&#x8D23;&#x76D1;&#x89C6;&#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x7684;&#x5F02;&#x5E38;&#x60C5;&#x51B5;&#xFF0C;&#x5982;&#x9664;&#x96F6;&#x9519;&#x8BEF;&#x3001;&#x5185;&#x5B58;&#x8BBF;&#x95EE;&#x9519;&#x8BEF;&#x7B49;&#xFF0C;&#x5E76;&#x5411;&#x5176;&#x4ED6;&#x90E8;&#x4EF6;&#x53D1;&#x51FA;&#x76F8;&#x5E94;&#x7684;&#x5F02;&#x5E38;&#x5904;&#x7406;&#x4FE1;&#x53F7;&#x3002;</li>
-<li>&#x6267;&#x884C;&#x6307;&#x4EE4;&#xFF1A;&#x4E00;&#x65E6;&#x89E3;&#x7801;&#x5B8C;&#x6210;&#xFF0C;&#x63A7;&#x5236;&#x5355;&#x5143;&#x5C06;&#x6307;&#x4EE4;&#x53D1;&#x9001;&#x7ED9;ALU&#x548C;&#x5176;&#x4ED6;&#x90E8;&#x4EF6;&#xFF0C;&#x4EE5;&#x6267;&#x884C;&#x64CD;&#x4F5C;&#x5E76;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x3002;</li>
+<li>&#x6700;&#x957F;&#x65F6;&#x95F4;&#x5C31;&#x662F;&#x6309;&#x987A;&#x5E8F;R0&#x5230;R11&#x4F9D;&#x6B21;&#x6392;&#x5217;&#x3002;</li>
+<li>&#x56E0;&#x4E3A;&#x6BCF;&#x4E2A;&#x8BB0;&#x5F55;&#x5904;&#x7406;&#x65F6;&#x95F4;&#x4E3A;3ms&#xFF0C;&#x6240;&#x4EE5;&#x7B2C;&#x4E00;&#x4E2A;3ms&#x4F1A;&#x628A;R0&#x7684;&#x4FE1;&#x606F;&#x8BFB;&#x51FA;&#x6765;&#xFF0C;&#x6B64;&#x65F6;&#x78C1;&#x5934;&#x6765;&#x5230;&#x4E86;R1&#x5904;&#x3002;&#x4F46;&#x662F;&#x7531;&#x4E8E;&#x5355;&#x7F13;&#x51B2;&#x533A;&#x7684;&#x539F;&#x56E0;&#xFF0C;&#x8FD9;&#x65F6;&#x5019;&#x4E0D;&#x80FD;&#x8BFB;&#x53D6;R1&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x9700;&#x8981;&#x6D88;&#x8017;3ms&#x6765;&#x5904;&#x7406;R0&#x7684;&#x5185;&#x5BB9;&#x3002;&#x7B49;&#x5F85;R0&#x5185;&#x5BB9;&#x5904;&#x7406;&#x5B8C;&#xFF0C;&#x6B64;&#x65F6;&#x78C1;&#x5934;&#x5C31;&#x6765;&#x5230;&#x4E86;R2&#x5904;&#x3002;</li>
+<li>&#x5F53;&#x524D;&#x9700;&#x8981;&#x8BFB;&#x53D6;R1&#x7684;&#x6570;&#x636E;&#xFF0C;&#x4F46;&#x662F;&#x78C1;&#x5934;&#x5DF2;&#x7ECF;&#x5230;&#x4E86;R2&#x3002;&#x78C1;&#x5934;&#x5C31;&#x9700;&#x8981;&#x7EE7;&#x7EED;&#x8F6C;&#x52A8;&#xFF0C;&#x8F6C;&#x5230;R1&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x9700;&#x8981;&#x7ECF;&#x8FC7;<code>&#xFF08;11-1&#xFF09;*3=30ms</code></li>
+<li>&#x7136;&#x540E;&#x91CD;&#x590D;2&#x64CD;&#x4F5C;&#xFF0C;&#x7B49;R1&#x5904;&#x7406;&#x5B8C;&#xFF0C;&#x78C1;&#x5934;&#x6765;&#x5230;&#x4E86;R3&#xFF0C;&#x90A3;&#x4E48;&#x78C1;&#x5934;&#x53C8;&#x9700;&#x8981;&#x8F6C;30ms&#x53BB;&#x5230;R2&#x8D77;&#x59CB;&#x5904;</li>
+<li>&#x4F9D;&#x6B21;&#x7C7B;&#x63A8;&#xFF0C;R0-R9&#x90FD;&#x662F;&#x8FD9;&#x6837;&#x7684;&#x89C4;&#x5F8B;&#xFF0C;&#x4ED6;&#x4EEC;&#x90FD;&#x6D88;&#x8017;&#x4E86;<code>3&#xFF08;&#x8BFB;&#x53D6;&#x65F6;&#x95F4;&#xFF09;+3&#xFF08;&#x5904;&#x7406;&#x65F6;&#x95F4;&#xFF09;+30&#xFF08;&#x78C1;&#x5934;&#x8F6C;&#x52A8;&#x65F6;&#x95F4;&#x5230;&#x4E0B;&#x4E00;&#x4E2A;&#x4F4D;&#x7F6E;&#x8D77;&#x59CB;&#x5904;&#xFF09;=36ms</code>&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x6D88;&#x8017;&#x4E86;<code>10*36=360ms</code></li>
+<li>&#x90A3;&#x4E48;&#x6B64;&#x65F6;&#x78C1;&#x5934;&#x5DF2;&#x7ECF;&#x6765;&#x5230;&#x4E86;R10&#x8D77;&#x59CB;&#x5904;&#xFF0C;&#x6700;&#x540E;&#x4E00;&#x5904;&#x8BB0;&#x5F55;&#x4E0D;&#x9700;&#x8981;&#x518D;&#x8F6C;&#x52A8;&#x78C1;&#x5934;&#xFF0C;&#x56E0;&#x6B64;&#x53EA;&#x6709;<code>3&#xFF08;&#x8BFB;&#x53D6;&#x65F6;&#x95F4;&#xFF09;+3&#xFF08;&#x5904;&#x7406;&#x65F6;&#x95F4;&#xFF09;=6ms</code></li>
+<li>&#x90A3;&#x4E48;&#x6700;&#x957F;&#x65F6;&#x95F4;&#x5C31;&#x7B49;&#x4E8E;<code>360+6=366ms</code></li>
 </ol>
-<h4 id="&#x7A0B;&#x5E8F;&#x8BA1;&#x6570;&#x5668;">&#x7A0B;&#x5E8F;&#x8BA1;&#x6570;&#x5668;</h4>
-<p><strong>Program Counter&#xFF0C;PC</strong></p>
-<p>&#x7A0B;&#x5E8F;&#x8BA1;&#x6570;&#x5668;&#x662F;&#x4E00;&#x4E2A;&#x5BC4;&#x5B58;&#x5668;&#xFF0C;&#x7528;&#x4E8E;&#x5B58;&#x50A8;&#x5F53;&#x524D;&#x6307;&#x4EE4;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x63A7;&#x5236;&#x5355;&#x5143;&#x6301;&#x7EED;&#x5730;&#x76D1;&#x89C6;&#x7A0B;&#x5E8F;&#x8BA1;&#x6570;&#x5668;&#x5185;&#x7684;&#x503C;&#xFF0C;&#x5E76;&#x4E3A;&#x6BCF;&#x6761;&#x6307;&#x4EE4;&#x589E;&#x52A0;&#x9002;&#x5F53;&#x7684;&#x503C;&#xFF0C;&#x4EE5;&#x4FDD;&#x6301;&#x6B63;&#x786E;&#x7684;&#x6307;&#x4EE4;&#x5E8F;&#x5217;&#x3002;</p>
-<h4 id="&#x6307;&#x4EE4;&#x5BC4;&#x5B58;&#x5668;">&#x6307;&#x4EE4;&#x5BC4;&#x5B58;&#x5668;</h4>
-<p><strong>Instruction Register&#xFF0C;IR</strong></p>
-<p>&#x6307;&#x4EE4;&#x5BC4;&#x5B58;&#x5668;&#x7528;&#x4E8E;&#x5B58;&#x50A8;&#x5F53;&#x524D;&#x6267;&#x884C;&#x7684;&#x6307;&#x4EE4;&#xFF0C;&#x4EE5;&#x4FBF;&#x63A7;&#x5236;&#x5355;&#x5143;&#x80FD;&#x591F;&#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x3002;</p>
-<h4 id="&#x6307;&#x4EE4;&#x8BD1;&#x7801;&#x5668;">&#x6307;&#x4EE4;&#x8BD1;&#x7801;&#x5668;</h4>
-<p><strong>Instruction Decoder</strong></p>
-<p>&#x7528;&#x4E8E;&#x89E3;&#x7801;&#x6307;&#x4EE4;&#xFF0C;&#x4EE5;&#x4E86;&#x89E3;&#x6307;&#x4EE4;&#x7684;&#x7C7B;&#x578B;&#x548C;&#x64CD;&#x4F5C;</p>
-<h4 id="&#x603B;&#x7EBF;">&#x603B;&#x7EBF;</h4>
+<h4 id="&#x8BA1;&#x7B97;&#x5904;&#x7406;11&#x4E2A;&#x8BB0;&#x5F55;&#x7684;&#x6700;&#x77ED;&#x65F6;&#x95F4;">&#x8BA1;&#x7B97;&#x5904;&#x7406;11&#x4E2A;&#x8BB0;&#x5F55;&#x7684;&#x6700;&#x77ED;&#x65F6;&#x95F4;</h4>
+<p><strong>&#x7531;&#x4E0A;&#x9762;&#x8BA1;&#x7B97;&#x6700;&#x957F;&#x65F6;&#x95F4;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#xFF0C;&#x65F6;&#x95F4;&#x662F;&#x6D6A;&#x8D39;&#x5728;&#x6BCF;&#x6B21;&#x90FD;&#x9700;&#x8981;&#x8F6C;&#x5708;&#x5230;&#x4E0B;&#x4E00;&#x4E2A;&#x8BB0;&#x5F55;&#x8D77;&#x59CB;&#x5904;&#x3002;&#x90A3;&#x4E48;&#x6700;&#x77ED;&#x65F6;&#x95F4;&#x5219;&#x662F;&#x4E0D;&#x6D88;&#x8017;&#x8FD9;&#x90E8;&#x5206;&#x65F6;&#x95F4;</strong></p>
+<p>&#x90A3;&#x4E48;&#x6247;&#x533A;&#x5206;&#x5E03;&#x5C31;&#x5E94;&#x8BE5;&#x5982;&#x4E0B;&#x56FE;</p>
+<p><img src="imgs/0216_4.png" alt=""></p>
 <ol>
-<li>&#x6570;&#x636E;&#x603B;&#x7EBF;&#xFF08;Data Bus&#xFF09;&#xFF1A;&#x4F20;&#x8F93;&#x6570;&#x636E;&#x3002;</li>
-<li>&#x63A7;&#x5236;&#x603B;&#x7EBF;&#xFF08;Control Bus&#xFF09;&#xFF1A;&#x4F20;&#x8F93;&#x63A7;&#x5236;&#x4FE1;&#x53F7;&#x3002;</li>
-<li>&#x5730;&#x5740;&#x603B;&#x7EBF;&#xFF08;Address Bus&#xFF09;&#xFF1A;&#x4F20;&#x8F93;&#x5185;&#x5B58;&#x6216;&#x5916;&#x8BBE;&#x5730;&#x5740;&#x3002;</li>
+<li>&#x56E0;&#x4E3A;&#x6BCF;&#x4E2A;&#x8BB0;&#x5F55;&#x5904;&#x7406;&#x65F6;&#x95F4;&#x4E3A;3ms&#xFF0C;&#x6240;&#x4EE5;&#x7B2C;&#x4E00;&#x4E2A;3ms&#x4F1A;&#x628A;R0&#x7684;&#x4FE1;&#x606F;&#x8BFB;&#x51FA;&#x6765;&#xFF0C;&#x5E76;&#x4E14;&#x7ECF;&#x8FC7;3ms&#x7684;&#x5904;&#x7406;&#x65F6;&#x95F4;&#x540E;&#xFF0C;&#x78C1;&#x5934;&#x521A;&#x597D;&#x5C31;&#x5230;&#x8FBE;R1&#x7684;&#x8D77;&#x59CB;&#x5904;&#x3002;R0&#x7684;&#x6D88;&#x8017;&#x65F6;&#x95F4;&#x5219;&#x4E3A;<code>3&#xFF08;&#x8BFB;&#x53D6;&#x65F6;&#x95F4;&#xFF09;+3&#xFF08;&#x5904;&#x7406;&#x65F6;&#x95F4;&#xFF09;=6ms</code></li>
+<li>&#x4F9D;&#x6B21;&#x7C7B;&#x63A8;&#xFF0C;R0-R10&#x90FD;&#x5F88;&#x5B8C;&#x7F8E;&#x7684;&#x4E00;&#x5904;&#x7406;&#x5B8C;&#x5C31;&#x80FD;&#x5230;&#x8FBE;&#x4E0B;&#x4E00;&#x4E2A;&#x8BB0;&#x5F55;&#x7684;&#x8D77;&#x59CB;&#x5904;&#x3002;</li>
+<li>&#x90A3;&#x4E48;&#x6D88;&#x8017;&#x65F6;&#x95F4;&#x4E3A;<code>6*11=66ms</code></li>
 </ol>
 
                                 
@@ -484,14 +476,10 @@
 
             
                 
-                <a href="2_04.html" class="navigation navigation-prev " aria-label="Previous page: 2.04  数据的表示(浮点数运算)">
+                <a href="2_15.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 2.15  随机存储器与只读存储器">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="2_06.html" class="navigation navigation-next " aria-label="Next page: 2.06  Flynn分类法简介">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -500,7 +488,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"2.05  CPU结构（运算器与控制器的组成）","level":"1.1.2.5","depth":3,"next":{"title":"2.06  Flynn分类法简介","level":"1.1.2.6","depth":3,"path":"2_06.md","ref":"2_06.md","articles":[]},"previous":{"title":"2.04  数据的表示(浮点数运算)","level":"1.1.2.4","depth":3,"path":"2_04.md","ref":"2_04.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"2_05.md","mtime":"2023-03-30T02:51:57.184Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-03-30T12:53:57.624Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"2.16  磁盘工作原理","level":"1.1.2.16","depth":3,"previous":{"title":"2.15  随机存储器与只读存储器","level":"1.1.2.15","depth":3,"path":"2_15.md","ref":"2_15.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"2_16.md","mtime":"2023-03-30T12:53:36.676Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-03-30T12:53:57.624Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
