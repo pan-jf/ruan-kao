@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>2.04  数据的表示(浮点数运算) · GitBook</title>
+        <title>2.18  串联系统与并联系统可靠度计算 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="2_05.html" />
     
-    
-    <link rel="prev" href="2_03.html" />
+    <link rel="prev" href="2_17.html" />
     
 
     </head>
@@ -188,7 +186,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.1.2.4" data-path="2_04.html">
+        <li class="chapter " data-level="1.1.2.4" data-path="2_04.html">
             
                 <a href="2_04.html">
             
@@ -370,7 +368,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.1.2.18" data-path="2_18.html">
+        <li class="chapter active" data-level="1.1.2.18" data-path="2_18.html">
             
                 <a href="2_18.html">
             
@@ -423,7 +421,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >2.04  数据的表示(浮点数运算)</a>
+        <a href="." >2.18  串联系统与并联系统可靠度计算</a>
     </h1>
 </div>
 
@@ -438,21 +436,29 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="204--&#x6570;&#x636E;&#x7684;&#x8868;&#x793A;&#x6D6E;&#x70B9;&#x6570;&#x8FD0;&#x7B97;">2.04  &#x6570;&#x636E;&#x7684;&#x8868;&#x793A;(&#x6D6E;&#x70B9;&#x6570;&#x8FD0;&#x7B97;)</h1>
-<p><img src="imgs/0204_1.png" alt=""></p>
-<h3 id="&#x6D6E;&#x70B9;&#x6570;">&#x6D6E;&#x70B9;&#x6570;</h3>
-<p>&#x6D6E;&#x70B9;&#x6570;&#x662F;&#x6307;&#x7684;&#x662F;&#x79D1;&#x5B66;&#x8BA1;&#x7B97;&#x6CD5;&#x8868;&#x793A;&#x6570;&#x7684;&#x65B9;&#x5F0F;&#x3002;</p>
-<p><img src="imgs/0204_2.png" alt=""></p>
-<p>&#x6BD4;&#x65B9;&#x8BF4;1000&#x3002;&#x7528;&#x79D1;&#x5B66;&#x8BA1;&#x6570;&#x6CD5;&#x53EF;&#x4EE5;&#x8BA1;&#x6570;&#x4E3A;<code>1.0x10^3</code></p>
-<p><img src="imgs/0204_3.png" alt=""></p>
-<p>&#x518D;&#x6BD4;&#x65B9;&#x8BF4;119&#x3002;&#x7528;&#x79D1;&#x5B66;&#x8BA1;&#x6570;&#x6CD5;&#x53EF;&#x4EE5;&#x8BA1;&#x6570;&#x4E3A;<code>1.19x10^2</code></p>
-<h4 id="&#x6D6E;&#x70B9;&#x6570;&#x76F8;&#x52A0;">&#x6D6E;&#x70B9;&#x6570;&#x76F8;&#x52A0;</h4>
-<p>&#x4E0A;&#x9762;2&#x4E2A;&#x6570;&#x5982;&#x679C;&#x8981;&#x76F8;&#x52A0;&#xFF0C;&#x9996;&#x5148;&#x9700;&#x8981;&#x5BF9;&#x9636;&#xFF0C;&#x4E00;&#x822C;&#x5462;&#x662F;<strong>&#x4ECE;&#x4F4E;&#x7684;&#x5F80;&#x9AD8;&#x7684;&#x5BF9;</strong>&#x3002;</p>
-<p><img src="imgs/0204_4.png" alt=""></p>
-<p>&#x5148;&#x5C06;<code>1.19x10^2</code>&#x5BF9;&#x9636;&#x4E3A;<code>0.119x10^3</code></p>
-<p>&#x7136;&#x540E;&#x5C3E;&#x6570;&#x76F8;&#x52A0;&#xFF0C;<code>1.0</code> + <code>0.119</code> <code>=1.119</code>&#xFF0C;&#x7ED3;&#x679C;&#x4E5F;&#x5C31;&#x662F;<code>1.119X10^3</code></p>
-<p>&#x6700;&#x540E;&#x683C;&#x5F0F;&#x5316;&#x8FD9;&#x4E2A;&#x6570;&#xFF0C;&#x7531;&#x4E8E;<code>1.119 &gt; 1 &#x5E76;&#x4E14; 1.119 &lt; 10</code>&#xFF0C;&#x6240;&#x4EE5;&#x4FDD;&#x6301;&#x4E0D;&#x53D8;&#x3002;&#x5982;&#x679C;&#x53CD;&#x4E4B;&#xFF0C;&#x8FD8;&#x9700;&#x8981;&#x632A;&#x4E00;&#x4E0B;&#x9636;&#x7801;&#x3002;</p>
-<p>&#x5C31;&#x6BD4;&#x5982; <code>1.119X10^2 + 9X10^2</code>&#xFF0C;&#x7ED3;&#x679C;&#x662F; <code>10.119X10^2</code>&#xFF0C;&#x5C31;&#x9700;&#x8981;&#x683C;&#x5F0F;&#x5316;&#x4E3A;<code>1.0119X10^3</code></p>
+                                <h1 id="218--&#x4E32;&#x8054;&#x7CFB;&#x7EDF;&#x4E0E;&#x5E76;&#x8054;&#x7CFB;&#x7EDF;&#x53EF;&#x9760;&#x5EA6;&#x8BA1;&#x7B97;">2.18  &#x4E32;&#x8054;&#x7CFB;&#x7EDF;&#x4E0E;&#x5E76;&#x8054;&#x7CFB;&#x7EDF;&#x53EF;&#x9760;&#x5EA6;&#x8BA1;&#x7B97;</h1>
+<h3 id="&#x4E32;&#x8054;&#x7CFB;&#x7EDF;&#x53EF;&#x9760;&#x5EA6;&#x8BA1;&#x7B97;">&#x4E32;&#x8054;&#x7CFB;&#x7EDF;&#x53EF;&#x9760;&#x5EA6;&#x8BA1;&#x7B97;</h3>
+<p><img src="imgs/0218_1.png" alt=""></p>
+<ul>
+<li>R1,R2...Rn&#x90FD;&#x662F;&#x5B50;&#x7CFB;&#x7EDF;&#xFF0C;&#x4ED6;&#x4EEC;&#x4E32;&#x8054;&#x8D77;&#x6765;&#x6210;&#x4E3A;&#x4E00;&#x4E2A;&#x5927;&#x7684;&#x7CFB;&#x7EDF;&#xFF0C;&#x53EA;&#x6709;&#x6BCF;&#x4E2A;&#x7CFB;&#x7EDF;&#x90FD;&#x6CA1;&#x95EE;&#x9898;&#xFF0C;&#x603B;&#x7CFB;&#x7EDF;&#x624D;&#x6CA1;&#x95EE;&#x9898;&#x3002;</li>
+<li>&#x53EF;&#x9760;&#x5EA6;&#xFF1A;R1 X R2 X .. X Rn  </li>
+<li>&#x5931;&#x6548;&#x7387;&#xFF1A;<em>&#x3BB;</em>1 + <em>&#x3BB;</em>2 + ... + <em>&#x3BB;</em>n&#xFF08;&#x7B80;&#x5316;&#x516C;&#x5F0F;&#xFF0C;&#x6709;&#x53EF;&#x80FD;&#x5927;&#x4E8E;1&#xFF09;</li>
+</ul>
+<h3 id="&#x5E76;&#x8054;&#x7CFB;&#x7EDF;&#x53EF;&#x9760;&#x5EA6;&#x8BA1;&#x7B97;">&#x5E76;&#x8054;&#x7CFB;&#x7EDF;&#x53EF;&#x9760;&#x5EA6;&#x8BA1;&#x7B97;</h3>
+<p><img src="imgs/0218_2.png" alt=""></p>
+<ul>
+<li>R1,R2...Rn&#x90FD;&#x662F;&#x5B50;&#x7CFB;&#x7EDF;&#xFF0C;&#x4ED6;&#x4EEC;&#x5E76;&#x8054;&#x8D77;&#x6765;&#x6210;&#x4E3A;&#x4E00;&#x4E2A;&#x5927;&#x7684;&#x7CFB;&#x7EDF;&#xFF0C;&#x53EA;&#x6709;&#x6BCF;&#x4E00;&#x4E2A;&#x5B50;&#x7CFB;&#x7EDF;&#x90FD;&#x51FA;&#x95EE;&#x9898;&#xFF0C;&#x8FD9;&#x4E2A;&#x603B;&#x7CFB;&#x7EDF;&#x624D;&#x4F1A;&#x51FA;&#x95EE;&#x9898;&#x3002;</li>
+<li>&#x53EF;&#x9760;&#x5EA6;&#xFF1A;1 - &#xFF08;1-R1&#xFF09; X &#xFF08;1-R2&#xFF09; X .. X &#xFF08;1-Rn&#xFF09;  </li>
+<li>&#x5931;&#x6548;&#x7387;&#xFF1A;1 - &#x53EF;&#x9760;&#x5EA6;</li>
+</ul>
+<h3 id="&#x6DF7;&#x5408;&#x7CFB;&#x7EDF;">&#x6DF7;&#x5408;&#x7CFB;&#x7EDF;</h3>
+<p><img src="imgs/0218_3.png" alt=""></p>
+<ol>
+<li>&#x8FD9;&#x4E2A;&#x7CFB;&#x7EDF;&#x5927;&#x4F53;&#x662F;&#x4E32;&#x8054;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x5148;&#x5355;&#x72EC;&#x8BA1;&#x7B97;&#x6BCF;&#x90E8;&#x5206;&#x7684;&#x53EF;&#x9760;&#x6027;</li>
+<li>&#x7136;&#x540E;&#x6BCF;&#x4E2A;&#x5B50;&#x7CFB;&#x7EDF;&#x662F;&#x5E76;&#x8054;&#x7684;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA1;&#x7B97;&#x51FA;&#x7B2C;&#x4E8C;&#x4E2A;&#x7CFB;&#x7EDF;&#x7684;&#x53EF;&#x9760;&#x6027;&#x4E3A;<code>1-(1-R)(1-R)(1-R)</code></li>
+<li>&#x7B2C;&#x4E09;&#x4E2A;&#x5B50;&#x7CFB;&#x7EDF;&#x540C;&#x7406;&#xFF0C;&#x53EF;&#x9760;&#x6027;&#x4E3A;<code>1-(1-R)(1-R)</code></li>
+<li>&#x518D;&#x6BCF;&#x4E2A;&#x5B50;&#x7CFB;&#x7EDF;&#x53EF;&#x9760;&#x6027;&#x76F8;&#x4E58; <code>R(1-(1-R)^3)(1-(1-R)^2)</code></li>
+</ol>
 
                                 
                                 </section>
@@ -480,14 +486,10 @@
 
             
                 
-                <a href="2_03.html" class="navigation navigation-prev " aria-label="Previous page: 2.03  数据的表示(原码反码补码移码)">
+                <a href="2_17.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 2.17  计算机总线">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="2_05.html" class="navigation navigation-next " aria-label="Next page: 2.05  CPU结构（运算器与控制器的组成）">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -496,7 +498,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"2.04  数据的表示(浮点数运算)","level":"1.1.2.4","depth":3,"next":{"title":"2.05  CPU结构（运算器与控制器的组成）","level":"1.1.2.5","depth":3,"path":"2_05.md","ref":"2_05.md","articles":[]},"previous":{"title":"2.03  数据的表示(原码反码补码移码)","level":"1.1.2.3","depth":3,"path":"2_03.md","ref":"2_03.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"2_04.md","mtime":"2023-03-29T09:50:35.683Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-03-31T03:17:25.515Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"2.18  串联系统与并联系统可靠度计算","level":"1.1.2.18","depth":3,"previous":{"title":"2.17  计算机总线","level":"1.1.2.17","depth":3,"path":"2_17.md","ref":"2_17.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"2_18.md","mtime":"2023-03-31T03:16:19.154Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-03-31T03:17:25.515Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
